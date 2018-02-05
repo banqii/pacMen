@@ -1,6 +1,12 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  img(src='/images/WechatIMG125.jpeg')
+  ul(class="pages")
+    li(class="chat page")
+      div(class="chatArea")
+        ul(class="messages")
+      input(class="inputMessage", placeholder="Type here...")
+    li(class="login page")
+      div(class="form")
+        h3(class="title") Whats yout nickname?
+        input(class="usernameInput", type="text", maxlength="14")
